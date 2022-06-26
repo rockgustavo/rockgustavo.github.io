@@ -13,12 +13,36 @@
     --border-color: #999;
     --bio-bg-color: #1E2A3A;
     --bio-border-color: #293544;
-    --about-bg-color: #111821;
+    --about-bg-color: #132b4d;
 }
 
 /* Class */
 .highlight {
     color: var(--main-color);
+}
+
+.description {
+    max-width: 75%;
+    margin-bottom: 10px;
+}
+
+.skills-box{
+    flex: 1 1 33%;
+    max-width: 33%;
+    margin-bottom: 35px;
+}
+
+.skills-title {
+    font-size: 24px;
+    margin-bottom: 25px;
+    font-weight: bold;
+    padding-left: 10px;
+    border-left: 5px solid var(--main-color);
+}
+
+.skills-box i{
+    font-size: 60px;
+    margin-right: 10px;
 }
 
 /* Id */
@@ -27,10 +51,10 @@
     display: flex;
     /* 1 linha com 2 colunas */
     flex-direction: row;
-    
+
 }
 
-#bio-container{
+#bio-container {
     flex: 1 1 20%;
     min-height: 100vh;
     background-color: var(--bio-bg-color);
@@ -39,37 +63,37 @@
     border-right: 5px solid var(--bio-border-color);
 }
 
-#about-container{
+#about-container {
     flex: 1 1 80%;
     height: 100%;
     background-color: var(--about-bg-color);
     padding: 50px;
 }
 
-#bio-container h2{
+#bio-container h2 {
     margin-bottom: 25px;
 }
 
-#bio-container p{
+#bio-container p {
     margin-bottom: 20px;
 }
 
-#bio-container #profession{
+#bio-container #profession {
     font-weight: bold;
 }
 
-#bio-container #welcome-text{
+#bio-container #welcome-text {
     font-weight: bold;
 }
 
-#bio-image{
+#bio-image {
     width: 175px;
     height: 175px;
     border-radius: 50%;
     margin-bottom: 25px;
 }
 
-#social-container{
+#social-container {
     display: flex;
     justify-content: center;
     list-style: none;
@@ -78,41 +102,102 @@
     padding-bottom: 25px;
 }
 
-#social-container li{
+#social-container li {
     flex: 1 1 0;
     max-width: 60px;
 }
 
-#social-container li a{
+#social-container li a {
     color: var(--main-color);
     font-size: 30px;
 }
 
-#hammerImg{
+#hammerImg {
     color: var(--main-color);
     font-size: 20px;
     margin-right: 5px;
 }
 
-#email-container{
+#email-container {
     display: flex;
     justify-content: center;
 }
 
 #email-container ion-icon,
-#email-container a{
+#email-container a {
     flex: 1 1 0;
 }
 
-#email-container a{
+#email-container a {
     color: var(--main-text-color);
     text-decoration: none;
     max-width: 225px;
 }
 
-#email-container ion-icon{
+#email-container ion-icon {
     color: var(--main-color);
     font-size: 20px;
     margin-right: -10px;
     max-width: 20px;
 }
+
+/* about-container */
+#name {
+    font-size: 42px;
+    margin-bottom: 15px;
+}
+
+#title {
+    font-size: 24px;
+    margin-bottom: 15px;
+    font-weight: bold;
+
+}
+
+#btn-projects {
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--main-text-color);
+    background-color: rgb(44, 44, 40);
+    border: 2px solid var(--main-color);
+    border-radius: 5px;
+    text-decoration: none;
+    transition: .5s;
+    margin: 25px 0;
+    padding: 12px 10px;
+    width: 150px;
+    text-align: center;
+    display: flex;
+}
+
+#btn-projects ion-icon,
+#btn-projects span {
+    flex: 1 1 0;
+
+}
+
+#btn-projects ion-icon{
+    font-size: 20px;
+    max-width: 20px;
+}
+
+/* Passar o mouse no botão ver meu projetos */
+#btn-projects:hover{
+    background-color: transparent;
+}
+
+#skills-section-title{
+    border-top: 1px solid var(--border-color);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+#skills-container{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 25px;  
+}
+
+
+
