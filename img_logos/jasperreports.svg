@@ -1,0 +1,15 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- JasperReports custom icon: bar chart / report -->
+  <!-- Background rounded square -->
+  <rect x="1" y="1" width="22" height="22" rx="4" fill="#1D6FA4"/>
+  <!-- Bar chart bars -->
+  <rect x="4"  y="14" width="3.5" height="6" rx="1" fill="white" opacity="0.9"/>
+  <rect x="9"  y="10" width="3.5" height="10" rx="1" fill="white"/>
+  <rect x="14" y="6"  width="3.5" height="14" rx="1" fill="#7EC8E3"/>
+  <!-- Trend line -->
+  <polyline points="5.75,14 10.75,10 15.75,6" fill="none" stroke="#FDB940" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Dots on line -->
+  <circle cx="5.75"  cy="14" r="1.2" fill="#FDB940"/>
+  <circle cx="10.75" cy="10" r="1.2" fill="#FDB940"/>
+  <circle cx="15.75" cy="6"  r="1.2" fill="#FDB940"/>
+</svg>

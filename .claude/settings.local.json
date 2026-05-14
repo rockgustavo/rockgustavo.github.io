@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(Rename-Item \"d:\\\\Backup Git\\\\rockgustavo.github.io\\\\img_logos\\\\googlee.svg\" \"google.svg\")",
+      "PowerShell(Rename-Item \"d:\\\\Backup Git\\\\rockgustavo.github.io\\\\img_logos\\\\googlee.svg\" \"google.svg\")"
+    ]
+  }
+}

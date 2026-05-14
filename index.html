@@ -1,113 +1,108 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--Google fonts  -->
+    <meta name="description" content="Portfólio de Gustavo Ramos — Desenvolvedor de Sistemas Java/Spring, React, Angular">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,700;0,900;1,300;1,700;1,900&display=swap"
-        rel="stylesheet">
-
-    <!-- Devicon -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
-
-    <!-- Css do Projeto -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-
-    <title>Portfólio Gustavo Ramos</title>
+    <title>Portfólio — Gustavo Ramos</title>
 </head>
-
 <body>
-    <main id="container">
-        <aside id="bio-container">
-            <h2 id="nome">Gustavo Ramos</h2>
-            <img id="bio-image" src="img/IMG_20230109_214308_688.jpg" alt="Gustavo Ramos">
-            <p>Olá, meu nome é Gustavo </p>
-            <p id="profession"><ion-icon id="hammerImg" name="hammer-outline"></ion-icon><span
-                    class="highlight">Desenvolvedor FullStack</span></p>
-            <p id="welcome-text">Seja bem-vindo!</p>
-            <ul id="social-container">
-                <li><a href="https://www.linkedin.com/in/grcuritiba" target="_blank"><ion-icon
-                            name="logo-linkedin"></ion-icon></a></li>
-                <li><a href="https://www.instagram.com/grcuritiba/" target="_blank"><ion-icon
-                            name="logo-instagram"></ion-icon></a></li>
-                <!-- <li><a href="https://www.facebook.com/" target="_blank"><ion-icon name="logo-facebook"></ion-icon></a></li> -->
-            </ul>
-            <div id="email-container">
-                <ion-icon name="mail-outline"> </ion-icon><a href="mailto:grcuritiba@gmail.com">grcuritiba@gmail.com</a>
+<!-- Dark mode toggle -->
+<button id="theme-toggle" class="theme-toggle" aria-label="Alternar modo escuro">
+    <ion-icon name="moon-outline" id="theme-icon"></ion-icon>
+</button>
+
+<div id="layout">
+
+    <!-- ── SIDEBAR ─────────────────────────────────────────── -->
+    <aside id="sidebar">
+        <div class="profile">
+            <img id="avatar" src="img/IMG_20230109_214308_688.jpg" alt="Gustavo Ramos">
+            <div>
+                <p class="profile-name">Gustavo Ramos</p>
+                <p class="profile-role">
+                    <ion-icon name="code-slash-outline"></ion-icon>
+                    Desenvolvedor de sistemas
+                </p>
             </div>
-        </aside>
+        </div>
+        <p class="bio">
+            Especialização em Engenharia de Software pela UFPR. Atuo do back-end Java/Spring
+            ao front-end React/Angular, com foco em Clean Code, microsserviços e boas práticas.
+        </p>
+        <div class="divider"></div>
+        <div class="contacts">
+            <a href="https://www.linkedin.com/in/grcuritiba" target="_blank" class="contact-link">
+                <ion-icon name="logo-linkedin"></ion-icon>LinkedIn
+            </a>
+            <a href="https://github.com/rockgustavo" target="_blank" class="contact-link">
+                <ion-icon name="logo-github"></ion-icon>GitHub
+            </a>
+            <a href="https://www.instagram.com/grcuritiba/" target="_blank" class="contact-link">
+                <ion-icon name="logo-instagram"></ion-icon>Instagram
+            </a>
+            <a href="mailto:grcuritiba@gmail.com" class="contact-link">
+                <ion-icon name="mail-outline"></ion-icon>
+                <span class="contact-email">grcuritiba@gmail.com</span>
+            </a>
+        </div>
+    </aside>
 
-        <section id="about-container">
-            <h1 id="name">Gustavo Ramos</h1>
-            <p id="title"><span class="highlight">Desenvolvedor FullStack</span></p>
-            <p class="description">Sou desenvolvedor de softwares. Possuo especialização em Engenharia de Software pela
-                UFPR, gosto de participar do projeto desde a <span class="highlight">definição das regras de negócio e
-                    levantamento de requisitos</span> até o deploy da aplicação.</p>
-            <p class="description">Atuo tanto no <span class="highlight">back-end</span> como no <span
-                    class="highlight">front-end.</span> Apaixonado por tecnologia estudo e me dedico todos os dias para
-                me tornar cada vez melhor.</p>
-            <a href="https://github.com/rockgustavo" target="_blank" id="btn-projects"><ion-icon
-                    name="share-social-outline"></ion-icon><span>Ver Projetos</span></a>
-            <h2 id="skills-section-title">Minhas Skills</h2>
-            <p class="description">Conheça as tecnologias que domino:</p>
+    <!-- ── MAIN ────────────────────────────────────────────── -->
+    <main id="main">
 
-            <div id="skills-container">
-                <div class="skills-box">
-                    <p class="skills-title">Back-end</p>
-                    <img class="logo" src="./img/java.svg" alt="Java">
-                    <i class="devicon-spring-plain-wordmark colored"></i>
-                    <i class="devicon-javascript-plain colored"></i>
-                    <i class="devicon-typescript-plain colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Front-end</p>
-                    <i class="devicon-react-original-wordmark colored"></i>
-                    <i class="devicon-html5-plain-wordmark colored"></i>
-                    <i class="devicon-css3-plain-wordmark colored"></i>
-                    <i class="devicon-bootstrap-plain-wordmark"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">OS</p>
-                    <i class="devicon-ubuntu-plain-wordmark colored"></i>
-                    <i class="devicon-windows8-original colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Databases</p>
-                    <i class="devicon-oracle-original colored"></i>
-                    <i class="devicon-mysql-plain-wordmark"></i>
-                    <i class="devicon-postgresql-plain-wordmark colored"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Agile Tools</p>
-                    <img class="logo scrum" src="./img_logos/Scrum.svg" alt="Scrum">
-                    <img class="logo" src="./img_logos/Kanban.PNG" alt="Kanban">
-                    <i class="devicon-jira-plain-wordmark colored"></i>
-                    <i class="devicon-trello-plain-wordmark"></i>
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Cloud</p>
-                    <img class="logo" src="./img_logos/Aws.svg" alt="Aws">
-                    <i class="devicon-heroku-original-wordmark colored"></i>
-                    
-                </div>
-                <div class="skills-box">
-                    <p class="skills-title">Other Tools</p>
-                    <i class="devicon-docker-plain-wordmark colored"></i>
-                    <i class="devicon-git-plain-wordmark colored"></i>
-                    <i class="devicon-github-original-wordmark"></i>
-                    <i class="devicon-apache-line-wordmark"></i>
-                </div>
+        <!-- Hero -->
+        <section id="hero">
+            <span class="greeting">Seja bem-vindo ao meu portfólio</span>
+            <h1 class="headline">Olá, sou o <span class="accent">Gustavo</span></h1>
+            <p class="description">
+                Um entusiasta da área de tecnologia, <br>lhe convido a conhecer um pouco sobre meu trabalho.<br>
+                Participo de projetos desde a <strong>definição das regras de negócio</strong>
+                do "build até o deploy". Tenho sólida experiência com o
+                <strong>back-end Java/ Spring</strong> e <strong>front-end JS/ React</strong>,
+                com arquiteturas monolíticas e de microsserviços, cloud e boas práticas de engenharia de software.
+            </p>
+            <div class="hero-actions">
+                <a href="https://github.com/rockgustavo" target="_blank" class="btn-primary">
+                    <ion-icon name="logo-github"></ion-icon>Ver Projetos
+                </a>
             </div>
         </section>
+
+        <!-- Skills -->
+        <section id="skills">
+            <h2 class="section-title">Competências e conhecimentos técnicos</h2>
+            <p class="section-subtitle">Clique em qualquer tecnologia para entender melhor e ver a documentação</p>
+
+            <div class="skills-grid" id="skills-grid"></div><!-- /skills-grid -->
+        </section>
+
     </main>
+</div>
 
-    <!--Ion Icons  -->
-    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+<!-- ── MODAL ─────────────────────────────────────────────────── -->
+<div id="skill-modal" class="modal-overlay" role="dialog" aria-modal="true">
+    <div class="modal-box">
+        <button class="modal-close" id="modal-close-btn" aria-label="Fechar">&#x2715;</button>
+        <div class="modal-header">
+            <img class="modal-icon" id="modal-icon" src="" alt="">
+            <span class="modal-name" id="modal-name"></span>
+        </div>
+        <p class="modal-desc" id="modal-desc"></p>
+        <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">
+            <ion-icon name="open-outline"></ion-icon>
+            Ver documentação oficial
+        </a>
+    </div>
+</div>
+
+<!-- Ion Icons -->
+<script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+<script src="js/skills.js"></script>
 </body>
-
 </html>

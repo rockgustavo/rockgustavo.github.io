@@ -1,0 +1,17 @@
+<svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Kanban board icon -->
+  <rect x="1" y="1" width="22" height="22" rx="3" fill="#0052CC"/>
+  <!-- Column headers -->
+  <rect x="3"  y="3" width="5.5" height="2.5" rx="1" fill="white" opacity="0.5"/>
+  <rect x="9.25" y="3" width="5.5" height="2.5" rx="1" fill="white" opacity="0.5"/>
+  <rect x="15.5" y="3" width="5.5" height="2.5" rx="1" fill="white" opacity="0.5"/>
+  <!-- Cards col 1 -->
+  <rect x="3"  y="6.5" width="5.5" height="3" rx="1" fill="white"/>
+  <rect x="3"  y="10.5" width="5.5" height="3" rx="1" fill="white"/>
+  <rect x="3"  y="14.5" width="5.5" height="3" rx="1" fill="white" opacity="0.6"/>
+  <!-- Cards col 2 -->
+  <rect x="9.25" y="6.5" width="5.5" height="3" rx="1" fill="#4FC3F7"/>
+  <rect x="9.25" y="10.5" width="5.5" height="3" rx="1" fill="#4FC3F7" opacity="0.7"/>
+  <!-- Cards col 3 -->
+  <rect x="15.5" y="6.5" width="5.5" height="3" rx="1" fill="#A5D6A7"/>
+</svg>
