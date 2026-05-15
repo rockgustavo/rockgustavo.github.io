@@ -20,17 +20,22 @@
 
     <!-- ── SIDEBAR ─────────────────────────────────────────── -->
     <aside id="sidebar">
+        <div class="lang-switcher">
+            <button class="lang-btn active" data-lang="pt">PT</button>
+            <button class="lang-btn" data-lang="en">EN</button>
+            <button class="lang-btn" data-lang="es">ES</button>
+        </div>
         <div class="profile">
             <img id="avatar" src="img/IMG_20230109_214308_688.jpg" alt="Gustavo Ramos">
             <div>
                 <p class="profile-name">Gustavo Ramos</p>
                 <p class="profile-role">
                     <ion-icon name="code-slash-outline"></ion-icon>
-                    Desenvolvedor de sistemas
+                    <span data-i18n="profile-role">Desenvolvedor de sistemas</span>
                 </p>
             </div>
         </div>
-        <p class="bio">
+        <p class="bio" data-i18n="bio">
             Especialização em Engenharia de Software pela UFPR. Atuo do back-end Java/Spring
             ao front-end React/Angular, com foco em Clean Code, microsserviços e boas práticas.
         </p>
@@ -57,9 +62,9 @@
 
         <!-- Hero -->
         <section id="hero">
-            <span class="greeting">Seja bem-vindo ao meu portfólio</span>
-            <h1 class="headline">Olá, sou o <span class="accent">Gustavo</span></h1>
-            <p class="description">
+            <span class="greeting" data-i18n="greeting">Seja bem-vindo ao meu portfólio</span>
+            <h1 class="headline" data-i18n-html="headline">Olá, sou o <span class="accent">Gustavo</span></h1>
+            <p class="description" data-i18n-html="description">
                 Um entusiasta da área de tecnologia, <br>lhe convido a conhecer um pouco sobre meu trabalho.<br>
                 Participo de projetos desde a <strong>definição das regras de negócio</strong>
                 do "build até o deploy". Tenho sólida experiência com o
@@ -68,15 +73,15 @@
             </p>
             <div class="hero-actions">
                 <a href="https://github.com/rockgustavo" target="_blank" class="btn-primary">
-                    <ion-icon name="logo-github"></ion-icon>Ver Projetos
+                    <ion-icon name="logo-github"></ion-icon><span data-i18n="btn-primary">Ver Projetos</span>
                 </a>
             </div>
         </section>
 
         <!-- Skills -->
         <section id="skills">
-            <h2 class="section-title">Competências e conhecimentos técnicos</h2>
-            <p class="section-subtitle">Clique em qualquer tecnologia para entender melhor e ver a documentação</p>
+            <h2 class="section-title" data-i18n="section-title">Competências e conhecimentos técnicos</h2>
+            <p class="section-subtitle" data-i18n="section-subtitle">Clique em qualquer tecnologia para entender melhor e ver a documentação</p>
 
             <div class="skills-grid" id="skills-grid"></div><!-- /skills-grid -->
         </section>
@@ -95,7 +100,7 @@
         <p class="modal-desc" id="modal-desc"></p>
         <a class="modal-link" id="modal-link" href="#" target="_blank" rel="noopener">
             <ion-icon name="open-outline"></ion-icon>
-            Ver documentação oficial
+            <span data-i18n="modal-link">Ver documentação oficial</span>
         </a>
     </div>
 </div>
@@ -103,6 +108,10 @@
 <!-- Ion Icons -->
 <script type="module" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@5.0.0/dist/ionicons/ionicons.js"></script>
+<script src="js/i18n_pt.js"></script>
+<script src="js/i18n_en.js"></script>
+<script src="js/i18n_es.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/skills.js"></script>
 </body>
 </html>
